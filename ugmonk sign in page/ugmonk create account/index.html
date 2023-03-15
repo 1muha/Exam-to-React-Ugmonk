@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugmonk create account page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="" method="post" name="form" onsubmit="return validated()">
+        <h2
+            style="font-family: sans-serif; color: white; margin-left: 130px; transform: translateY(100px); font-size: 25px;">
+            Create your EA Account
+        </h2>
+        <p
+            style="color: white; font-family: sans-serif; text-align: center; font-size: 18px; transform: translateY(130px);">
+            Follow a few steps to
+            wrap up your EA
+            Account (it's <br> quick, we promise)</p>
+        <!-- texts -->
+        <div class="icons">
+            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><i class="fa-brands fa-apple"></i></li>
+            <li><i class="fa-brands fa-steam"></i></li>
+            <li><i class="fa-brands fa-xbox"></i>
+            <li><i class="fa-brands fa-playstation"></i></li>
+        </div>
+        <!-- icons -->
+        <div class="line"></div>
+        <label style="transform: translateY(260px);" for="countries"
+            class="block mb-2 text-sm font-medium text-white dark:text-white">Country/Region</label>
+        <select
+            style="border: 2px solid #62626f; color: #141724; font-size: 16px; background-color: transparent; transform: translateY(255px);"
+            id="countries"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="DE">Uzbekistan</option>
+            <option selected>Country/Region</option>
+            <option value="DE">Africa</option>
+            <option value="DE">Angola</option>
+            <option value="DE">Australia</option>
+            <option value="DE">Brazil</option>
+            <option value="CA">Canada</option>
+            <option value="DE">Dubai</option>
+            <option value="DE">Egypt</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="DE">United Kingdom</option>
+            <option value="DE">United States</option>
+            <option value="DE">Norway</option>
+            <option value="DE">Japan</option>
+            <option value="DE">China</option>
+            <option value="DE">Tadjikistan</option>
+            <option value="DE">Russia</option>
+            <option value="DE">Korea</option>
+            <option value="DE">Indonesia</option>
+            <option value="DE">Saudi</option>
+            <option value="DE">Turkey</option>
+            <option value="DE">Turkmenistan</option>
+            <option value="DE">Kirgizistan</option>
+            <option value="DE">Kazakhstan</option>
+            <option value="DE">Mexica</option>
+            <option value="DE">Kolumbiya</option>
+            <option value="DE">Tonga</option>
+            <option value="DE">Tunisia</option>
+            <option value="DE">Mongola</option>
+            <option value="DE">India</option>
+            <option value="DE">Argentina</option>
+            <option value="DE">Vyetnam</option>
+            <option value="DE">Somalia</option>
+            <option value="DE">South Korea</option>
+            <option value="DE">South India</option>
+            <option value="DE">South America</option>
+            <option value="DE">South Africa</option>
+            <option value="DE">South Egypt</option>
+            <option value="DE">Rio</option>
+            <option value="DE">Galia</option>
+            <option value="DE">Urugvay</option>
+            <option value="DE">Tanzania</option>
+            <option value="DE">Malasia</option>
+            <option value="DE">Singapur</option>
+            <option value="DE">Ukraina</option>
+            <option value="DE">Slovenia</option>
+            <option value="DE">Togo</option>
+            <option value="DE">Tongo</option>
+            <option value="DE">Taiwan</option>
+            <option value="DE">Samoa</option>
+        </select>
+        <!-- select of countries -->
+        <label style="transform: translateY(270px);" for="months"
+            class="block mb-2 text-sm font-medium text-white dark:text-white">DATE OF BIRTH</label>
+        <select
+            style="border: 2px solid #62626f; color: #141724; font-size: 16px; width: 150px; background-color: transparent; transform: translateY(270px);"
+            id="months"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Month</option>
+            <option value="DE">January</option>
+            <option value="DE">February</option>
+            <option value="DE">March</option>
+            <option value="DE">April</option>
+            <option value="DE">May</option>
+            <option value="DE">June</option>
+            <option value="DE">July</option>
+            <option value="DE">August</option>
+            <option value="DE">September</option>
+            <option value="DE">October</option>
+            <option value="DE">November</option>
+            <option value="DE">December</option>
+        </select>
+        <!-- select for months -->
+        <select
+            style="border: 2px solid #62626f; color: #141724; font-size: 16px; width: 100px; background-color: transparent; margin-left: 160px; transform: translateY(225px);"
+            id="days"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Day</option>
+            <option value="DE">1</option>
+            <option value="DE">2</option>
+            <option value="DE">3</option>
+            <option value="DE">4</option>
+            <option value="DE">5</option>
+            <option value="DE">6</option>
+            <option value="DE">7</option>
+            <option value="DE">8</option>
+            <option value="DE">9</option>
+            <option value="DE">10</option>
+            <option value="DE">11</option>
+            <option value="DE">13</option>
+            <option value="DE">14</option>
+            <option value="DE">15</option>
+            <option value="DE">16</option>
+            <option value="DE">17</option>
+            <option value="DE">18</option>
+            <option value="DE">19</option>
+            <option value="DE">20</option>
+            <option value="DE">21</option>
+            <option value="DE">22</option>
+            <option value="DE">23</option>
+            <option value="DE">24</option>
+            <option value="DE">25</option>
+            <option value="DE">26</option>
+            <option value="DE">28</option>
+            <option value="DE">29</option>
+            <option value="DE">30</option>
+            <option value="DE">31</option>
+        </select>
+        <!-- select for days -->
+        <select
+            style="border: 2px solid #62626f; color: #141724; font-size: 16px; width: 100px; background-color: transparent; margin-left: 270px; transform: translateY(180px);"
+            id="countries"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Day</option>
+            <option value="DE">1</option>
+            <option value="DE">2</option>
+            <option value="DE">3</option>
+            <option value="DE">4</option>
+            <option value="DE">5</option>
+            <option value="DE">6</option>
+            <option value="DE">7</option>
+            <option value="DE">8</option>
+            <option value="DE">9</option>
+            <option value="DE">10</option>
+            <option value="DE">11</option>
+            <option value="DE">13</option>
+            <option value="DE">14</option>
+            <option value="DE">15</option>
+            <option value="DE">16</option>
+            <option value="DE">17</option>
+            <option value="DE">18</option>
+            <option value="DE">19</option>
+            <option value="DE">20</option>
+            <option value="DE">21</option>
+            <option value="DE">22</option>
+            <option value="DE">23</option>
+            <option value="DE">24</option>
+            <option value="DE">25</option>
+            <option value="DE">26</option>
+            <option value="DE">28</option>
+            <option value="DE">29</option>
+            <option value="DE">30</option>
+            <option value="DE">31</option>
+        </select>
+
+        <button class="next4">
+            NEXT
+        </button>
+
+        <h3 style="margin-top: 20px;">Already have an account? <a style="color: #2041c2;" href="">Sign in</a></h3>
+        <h4 style="text-align: center; cursor: pointer; color: #2041c2;">
+            Do you create EA account for your child?
+        </h4>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
